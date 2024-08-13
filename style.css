@@ -15,13 +15,13 @@
 
 nav{
      display: flex;
-     padding: 0.1% 6%;
+     padding: 0% 6%;
      justify-content: space-between;
      align-items: center;   
 }
 
 nav img{
-    width: 200px;
+    width: 175px;
 }
 
 .nav-links{
@@ -46,7 +46,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background:#ffee00;
     display: block;
     margin: auto;   
     transition: 0.5s;
@@ -71,13 +71,13 @@ nav img{
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 12px;
+    font-size: 15px;
     color: antiquewhite;
 }
 
 .hero-btn{
     display: inline-block;
-    text-decoration: none;
+    text-decoration:double;
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
@@ -87,8 +87,9 @@ nav img{
     cursor: pointer;
     }
 .hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #e3d407;
+    background: #e3d407;
+    color: #65000b ;
     transition: 0.5s;
 }
 
@@ -105,7 +106,7 @@ nav .fa{
     }
     .nav-links{
         position:absolute;
-        background: #f44336;
+        background: #e3d407;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -132,7 +133,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 40px;
 
 }
 
@@ -157,7 +158,7 @@ nav .fa{
 
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #fdffd0;
     border-radius: 20px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -185,13 +186,13 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
 
 }
 .campus-col{
     flex-basis: 31%;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
     overflow:hidden;
 }
@@ -212,14 +213,14 @@ h3{
 }
 
 .layer:hover{
-    background:rgba(226,0,0,0.7);
+    background:rgba(255,255,0,0.7);
 
 }
 
 .layer h3{
     width: 100%;
     font-weight: 500;
-    color:#fff ;
+    color:#65000b ;
     font-size: 26px;
     bottom: 0;
     left: 50%;
@@ -244,28 +245,194 @@ h3{
 }
 
 .Facilities-col{
+    padding: 12px;
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    overflow: hidden;
 
 }
 
 .Facilities-col img{
+    padding: 12px 12px ;
     width: 100%;
     border-radius: 10px;
     display: inline;
+    position:relative;
+  
+   
 
 }
 
 .Facilities-col p{
-    padding: 0;
+    padding: 12px;
     text-align:left;
 }
 
 .Facilities-col h3{
+   padding: 12px;
    margin-top: 16px;
    margin-bottom: 15px;
    text-align: left;
 
+}
+
+
+
+/* Testimonials*/
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 1px;
+
+}
+
+.testimonials-col{
+    flex-basis: 28%;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fdffd0;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonials-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+
+}
+
+.testimonials-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.testimonials-col p{
+    padding: 0%;
+    
+
+}
+
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+
+}
+
+.testimonials-col .fa{
+    color: #f44336;
+}
+
+@media(max-width: 700px){
+    .testimonials-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* call to action */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color:#fff ;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;     
+    }
+}
+
+/*footer*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer h2{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icon .fa{
+    
+    color: #77010e;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+   color: #65000b; 
+}
+
+/*About Us Page*/
+
+.sub-header{
+    min-height: 50vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/background.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    margin-top: 30px;
+
+}
+
+.About-Us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+.About-Us-col{
+    flex-basis: 80%;
+    padding: 30px 2px;
+}
+
+.About-Us-col img{
+    width: 100%;
+}
+
+.About-Us-col h1{
+    padding-top: 0%;
+
+}
+
+.About-Us-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #65000b;
+    background: transparent;
+    color: #65000b;
+}
+
+.red-btn:hover{
+    color:#000000;
 }
